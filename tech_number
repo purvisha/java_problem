@@ -1,0 +1,22 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		int a,b,c,d;
+		Scanner sc=new Scanner(System.in);
+		a=sc.nextInt();
+		b=a;
+		c=a%100;
+	    d=a/100;
+	    int sum=c+d;
+	    int pro=sum*sum;
+		if(pro==b){
+		    System.out.println("tech number");
+		}
+		else{
+		    System.out.println("not a tech number");
+		}
+	}
+}
