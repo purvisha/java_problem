@@ -1,0 +1,20 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		int a,b,c;
+		Scanner sc=new Scanner(System.in);
+		a=sc.nextInt();
+		b=a;
+		c=a*a;
+		int d= c%100;
+		if(d==b){
+		    System.out.println("automorphic number");
+		}
+		else{
+		    System.out.println("not automorphic number");
+		}
+	}
+}
