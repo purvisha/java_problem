@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main
+{
+    public static boolean ischeck(int a){
+        while(a!=0){
+            if(a%10==0)
+                return true;
+            a=a/10;
+        }
+        return false;
+    }
+    
+	public static void main(String[] args) {
+		
+		Scanner s= new Scanner(System.in);
+		int a=s.nextInt();
+		if(ischeck(a)){
+		    System.out.println("Duck Number");
+		}
+		else{
+		    System.out.println("not a duck Number");
+		}
+	}
+}
