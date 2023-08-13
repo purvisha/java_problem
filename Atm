@@ -1,0 +1,39 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		
+		Scanner s= new Scanner(System.in);
+		int balance=10000;
+		System.out.println("Press 1 for Withdraw\nPress 2 for Deposit\nPress 3 for Check balance\nPress 4 for Exit");
+		int withdraw,deposit,cas;
+	
+		cas = s.nextInt();
+		switch(cas){
+		    case 1:
+		        System.out.println("Enter the withdraw amount");
+		        withdraw=s.nextInt();
+		        if(balance>withdraw){
+		            balance=balance-withdraw;
+		            System.out.println("Please collect the amount");
+		        }
+		        else{
+		            System.out.println("Insuffient balance");
+		        }
+		        break;
+		    case 2:
+		        System.out.println("Enter the deposit amount");
+		        deposit=s.nextInt();
+		        balance=balance+deposit;
+		        System.out.println("your money deposited successfully");
+		        break;
+		   case 3:
+		       System.out.println(balance);
+		       break;
+		  case 4:
+		      System.out.println("thanks for reaching");
+		      break;
+		       
+		}
+	}
+}
