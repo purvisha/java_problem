@@ -1,0 +1,35 @@
+import java.util.*;
+public class Main
+{
+    public static boolean isprime(int n)  
+        {  
+          if (n <= 1)  
+            return false;  
+          for (int i = 2; i < n; i++)  
+            if (n % i == 0)  
+                return false;  
+         
+             return true;  
+        }  
+	public static void main(String[] args) {
+		
+		Scanner s= new Scanner(System.in);
+		int a=s.nextInt();
+		int sum=0;
+		int b=a;
+		boolean flag=isprime(a);
+		while(b!=0){
+		    int q=b%10;
+		    sum=sum*10+q;
+		    b=b/10;
+		}
+		boolean flag1=isprime(sum);
+		if(flag==true && flag1==true){
+		    System.out.println("emirp number");
+		}
+		else{
+		    System.out.println("not a emirp number");
+		}
+		
+	}
+}
