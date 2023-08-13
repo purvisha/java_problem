@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main
+{
+    
+	public static void main(String[] args) {
+		
+		Scanner s= new Scanner(System.in);
+		int a=s.nextInt();
+		int count=0;
+		String bin = Integer.toBinaryString(a);
+		int g=Integer.parseInt(bin);
+		while(g!=0){
+		    if(g%10==1){
+		        count++;
+		    }
+		    g=g/10;
+		}
+		if(count%2==0){
+		    System.out.println("Evil Number");
+		}
+		else{
+		    System.out.println("not a Evil Number");
+		}
+	}
+}
