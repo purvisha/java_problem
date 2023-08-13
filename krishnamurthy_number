@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main
+{
+    
+	public static void main(String[] args) {
+		
+		Scanner s= new Scanner(System.in);
+		int a=s.nextInt();
+		int b=a;
+		int sum=0;
+		while(a!=0){
+		    int r=a%10;
+		    int pro=1;
+		    for(int i=1;i<=r;i++){
+		        pro=pro*i;
+		    }
+		    sum+=pro;
+		    a=a/10;
+		    
+		}
+		if(sum==b){
+		    System.out.println("krishnamurthy Number");
+		}
+		else{
+		    System.out.println("not a krishnamurthy Number");
+		}
+	}
+}
